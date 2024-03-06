@@ -10,7 +10,7 @@ export const CategoryItemMain = ({item1, index}) => {
     className="grid-item w_50">
     <Link
       className="category_item_1"
-      href={`/categories/Todas/${item1.nombre}`}
+      href={`/categories/Todas/${item1.nombre.trim().replace(/\s/g,"-")}`}
     >
       <img
         src={`${item1.imagen}`}
