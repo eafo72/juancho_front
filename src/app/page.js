@@ -346,7 +346,7 @@ const Page = async () => {
                         <div className="feature_item_1">
                           <Link
                             className="item_image"
-                            href={`/categories/Todas/${item1.nombre}`}
+                            href={`/categories/Todas/${item1.nombre.trim().replace(/\s/g,"-")}`}
                           >
                             <img
                               src={`${item1.imagen}`}
@@ -356,12 +356,12 @@ const Page = async () => {
                           </Link>
                           <div className="item_content">
                             <h3 className="item_title">
-                              <Link href={`/categories/Todas/${item1.nombre}`}>
+                              <Link href={`/categories/Todas/${item1.nombre.trim().replace(/\s/g,"-")}`}>
                                 {item1.nombre}
                               </Link>
                             </h3>
                             <Link
-                              href={`/categories/Todas/${item1.nombre}`}
+                              href={`/categories/Todas/${item1.nombre.trim().replace(/\s/g,"-")}`}
                               className="item_badge"
                             >
                               VER{" "}
