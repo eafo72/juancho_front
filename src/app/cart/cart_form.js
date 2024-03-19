@@ -15,7 +15,9 @@ import { useCartStore } from '../../store/cart';
 import { CardPayment } from '@mercadopago/sdk-react';
 
 import { initMercadoPago } from '@mercadopago/sdk-react'
-initMercadoPago('APP_USR-84f2c42a-e204-46f0-8dda-57e08f7579a9', {locale: 'es-MX'}); //'YOUR_PUBLIC_KEY')
+initMercadoPago('TEST-760407e9-e5a3-40bb-8aaa-af978b629476', {locale: 'es-MX'}); //'YOUR_PUBLIC_KEY')
+
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 
 
@@ -39,7 +41,10 @@ export const CartForm = () => {
   const [costo_envio, setCostoEnvio] = useState(0);
 
   const [viewMPbutton, setViewMPbutton] = useState(false);
+  const [viewPayPalbutton, setViewPayPalbutton] = useState(false);
+
   const [viewContinuebutton, setViewContinuebutton] = useState(true);
+  
 
   const allDeliveryTypes = [
     {"value":"Directo en Tienda", "label": "Directo en Tienda"},
@@ -74,6 +79,28 @@ export const CartForm = () => {
     } else {
       setViewContinuebutton(false)
       setViewMPbutton(true)
+    }  
+  }
+
+  const mostrarPayPalbutton = () => {
+    //validamos campos
+    if(formaEntrega === "" || formaEntrega === undefined) {
+      mostrarMensaje("Debes seleccionar una forma de entrega"); 
+    }else if(costo_envio === "" || costo_envio === undefined) {
+      mostrarMensaje("Debes escribir el costo de envío");    
+    }else if(datos_entrega_nombre === "" || datos_entrega_nombre === undefined) {
+      mostrarMensaje("Debes escribir el nombre en datos de entrega");    
+    }else if(datos_entrega_direccion === "" || datos_entrega_direccion === undefined) {
+      mostrarMensaje("Debes escribir la direccion en datos de entrega");    
+    }else if(datos_entrega_correo === "" || datos_entrega_correo === undefined) {
+      mostrarMensaje("Debes escribir el correo en datos de entrega");    
+    }else if(datos_entrega_telefono === "" || datos_entrega_telefono === undefined) {
+      mostrarMensaje("Debes escribir el teléfono en datos de entrega");    
+    }else if(agree === false) {
+      mostrarMensaje("Debes aceptar los terminos y condiciones");    
+    } else {
+      setViewContinuebutton(false)
+      setViewPayPalbutton(true)
     }  
   }
 
@@ -451,7 +478,10 @@ export const CartForm = () => {
 
                          {cart && cart.length > 0 && viewContinuebutton === true ?
                           (
-                          <button className="btn btn_primary text-uppercase" onClick={() => mostrarMPbutton()} >Continuar</button>
+                          <>
+                            <button style={{margin:"10px"}} className="btn btn_primary text-uppercase" onClick={() => mostrarMPbutton()} >Continuar con Mercado Pago</button>
+                            <button style={{margin:"10px"}} className="btn btn_primary text-uppercase" onClick={() => mostrarPayPalbutton()} >Continuar con Paypal</button>
+                          </>  
                           )
                           :(<></>)
                          }
@@ -466,6 +496,43 @@ export const CartForm = () => {
                          )
                          :(<></>)
                          }
+
+                        {cart && cart.length > 0 && viewPayPalbutton === true ?
+                          (<PayPalScriptProvider options={{ 
+                            clientId: "AU0iYefwyGxxvHGKHsIsuOUgG90MvxKGnpJyko9VGWLmTwppetXKDT4NLETo60tu5g6WdzAwiIozvuzL",
+                            currency: "MXN" 
+                            }}>
+                            <PayPalButtons 
+                             createOrder={async () => {
+                              try {
+                                const res = await clienteAxios({
+                                  method: "post",
+                                  url: "/paypal/process_payment",
+                                  data: JSON.stringify({total:cart_total}),
+                                  headers: {
+                                    'Content-Type': 'application/json',
+                                  },
+                                });
+                                return res.data.id;
+                              } catch (error) {
+                                console.log(error);
+                              }
+                            }}
+                            onCancel={(data) => console.log("compra cancelada")}
+                            onApprove={(data, actions) => {
+                              console.log(data);
+                              actions.order.capture();
+                              //si no hubo error en el pago
+                              sendData();
+          
+                            }}
+                            style={{ layout: "vertical" }} 
+                            />
+                           </PayPalScriptProvider>
+                         )
+                         :(<></>)
+                         }
+
                   </div>   
                   </li>
 
