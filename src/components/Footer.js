@@ -39,16 +39,16 @@ export async function Footer() {
                   <div className="brand_logo">
                     <Link className="brand_link" href="/">
                       <Image
-                        style={{ height: "100px", width: "100px" }}
+                        style={{ width: "100px" }}
                         src={logo_footer}
                         alt={logo_footer}
                       />
                     </Link>
                   </div>
                   <p>
-                    Lorem Ipsum
+                    UNI JUANCHO
                     <br />
-                    Ut enim ad minim veniam
+                    EL REY DEL RANCHO
                   </p>
 
                   {/*
@@ -152,7 +152,7 @@ export async function Footer() {
         </div>
         <div className="footer_bottom">
           <div className="container width_desktop">
-            <p className="copyright_text text-center">© Todos los derechos reservados Juancho el rey del rancho desarrollado por <a href="https://gomalab.com" target="_blank" style={{color: "#fb491d"}}>GomaLab</a>
+            <p className="copyright_text text-center">© Todos los derechos reservados Juancho el rey del rancho desarrollado por <a href="https://gomalab.com" target="_blank" style={{color: "#344493"}}>GomaLab</a>
             </p>
           </div>
         </div>

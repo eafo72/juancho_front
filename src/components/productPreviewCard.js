@@ -171,12 +171,12 @@ export const ProductPreviewCard = ({ item }) => {
       background: "white",
       textTransform: "none",
       paddingLeft: "10px",
-      borderColor: state.isFocused ? "#fb491d" : "#cccccc",
+      borderColor: state.isFocused ? "#344493" : "#cccccc",
       boxShadow: "0",
       "&:hover": {
         ...base,
         boxShadow: "0",
-        borderColor: "#fb491d !important",
+        borderColor: "#344493 !important",
       },
     }),
     singleValue: (base, state) => ({
@@ -191,9 +191,9 @@ export const ProductPreviewCard = ({ item }) => {
       return {
         ...base,
         background: state.isSelected
-          ? "#fb491d"
+          ? "#344493"
           : state.isFocused
-          ? "#fb491d50"
+          ? "#34449350"
           : "transparent",
         color: state.isSelected ? "white" : "grey",
       };

@@ -136,12 +136,12 @@ export const ProductCard = ({ stockTotal, fotos_carrusel, producto, allSizes }) 
       background: "white",
       textTransform:"none",
       paddingLeft:"10px",
-      borderColor: state.isFocused ? "#fb491d":"#cccccc",
+      borderColor: state.isFocused ? "#344493":"#cccccc",
       boxShadow: "0",
       "&:hover": {
         ...base,
         boxShadow: "0",
-        borderColor: "#fb491d !important",
+        borderColor: "#344493 !important",
       }
     }),
     singleValue: (base, state) => ({
@@ -155,7 +155,7 @@ export const ProductCard = ({ stockTotal, fotos_carrusel, producto, allSizes }) 
     option: (base, state) => {
       return {
         ...base,
-        background: state.isSelected ? "#fb491d" : state.isFocused ? "#fb491d50": "transparent",
+        background: state.isSelected ? "#344493" : state.isFocused ? "#34449350": "transparent",
         color: state.isSelected ? "white" : "grey",
       };
     },
