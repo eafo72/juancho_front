@@ -34,9 +34,9 @@ export async function Footer() {
         <div className="footer_widget_area">
           <div className="container width_desktop">
             <div className="row">
-              <div className="col col-lg-4 col-md-5 col-sm-6">
+              <div align="center" className="col col-lg-4 col-md-5 col-sm-6">
                 <div className="footer_widget footer_about">
-                  <div className="brand_logo">
+                  <div  className="brand_logo">
                     <Link className="brand_link" href="/">
                       <Image
                         style={{ width: "100px" }}
@@ -45,11 +45,7 @@ export async function Footer() {
                       />
                     </Link>
                   </div>
-                  <p>
-                    UNI JUANCHO
-                    <br />
-                    EL REY DEL RANCHO
-                  </p>
+                  <p style={{ color:"white", fontSize:".9rem"}}>Uniformes industriales, deportivos y ejecutivos.<br/>Dale estilo y profesionalismo a tu empresa.</p>
 
                   {/*
                   <div className="fooetr_newsletter_4">

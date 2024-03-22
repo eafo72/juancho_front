@@ -33,8 +33,10 @@
   font-family: "Plantagenet";
   src: local("Plantagenet"), url("../fonts/plantagenet-cherokee.ttf");
 }
-
-
+@font-face {
+  font-family: "MuliExtraBold";
+  src: local("MuliExtraBold"), url("../fonts/Muli-ExtraBold.ttf");
+}
 
 /* template fonts - end
 ================================================== */
@@ -19026,11 +19028,13 @@ hr {
 	.sidenav a {font-size: 18px;}
 }
 
-
 .fontPlantagenet {
   font-family: "Plantagenet";
 }
 
+.fontMuliExtraBold {
+  font-family: "MuliExtraBold";
+}
 
 .logo_position_float{
   position:absolute;

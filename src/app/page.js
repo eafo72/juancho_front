@@ -98,7 +98,7 @@ const Page = async () => {
             <div className="row align-items-center">
               <div className="col ">
                 <div className="section_title" style={{paddingBottom:"0px"}}>
-                  <h2 className="title_text text-black fontPlantagenet" >
+                  <h2 className="title_text text-black fontMuliExtraBold" >
                   Lo más nuevo de nuestra colección
                   </h2>
                 </div>
@@ -152,7 +152,7 @@ const Page = async () => {
             <div className="row align-items-center">
               <div className="col ">
                 <div className="section_title">
-                  <h2 className="title_text text-black fontPlantagenet" >
+                  <h2 className="title_text text-black fontMuliExtraBold" >
                     Nuestros productos
                   </h2>
                   <p className="mb-0">Contamos con más de 1000 opciones</p>
@@ -322,7 +322,7 @@ const Page = async () => {
             <div className="row align-items-center">
               <div className="col ">
                 <div className="section_title" style={{paddingBottom:"0px"}}>
-                  <h2 className="title_text text-black fontPlantagenet" >
+                  <h2 className="title_text text-black fontMuliExtraBold" >
                   Los preferidos de todos
                   </h2>
                 </div>
