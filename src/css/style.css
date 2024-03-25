@@ -19,23 +19,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 */
-@font-face {
-  font-weight: 400;
-  font-style: normal;
-  font-family: "Aligatai";
-  src: local("Aligatai"), url("../fonts/Aligatai.woff") format("woff");
-}
-@font-face {
-  font-family: "Margarita";
-  src: local("Margarita"), url("../fonts/marguerite.ttf");
-}
-@font-face {
-  font-family: "Plantagenet";
-  src: local("Plantagenet"), url("../fonts/plantagenet-cherokee.ttf");
-}
+
 @font-face {
   font-family: "MuliExtraBold";
   src: local("MuliExtraBold"), url("../fonts/Muli-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "MuliRegular";
+  src: local("MuliRegular"), url("../fonts/Muli-Regular.ttf");
 }
 
 /* template fonts - end
@@ -50,7 +41,7 @@ body {
   line-height: 1.65;
   font-style: normal;
   color: #3d3d3d;
-  font-family: "Jost", sans-serif;
+  font-family: "MuliRegular";
   text-rendering: optimizelegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -140,7 +131,7 @@ button:focus {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #546076;
-  font-family: "Jost", sans-serif;
+  font-family: "MuliExtraBold";
 }
 
 hr {
@@ -684,7 +675,7 @@ hr {
 .section_title p {
   color: #546076;
   font-size: 17px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* section title - end */
@@ -714,7 +705,7 @@ hr {
   text-transform: uppercase;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* section title 4 - end */
@@ -1505,7 +1496,7 @@ hr {
 }
 
 .comment_item {
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .comment_item:not(:last-child) {
   margin-bottom: 40px;
@@ -1551,7 +1542,7 @@ hr {
   font-weight: 500;
   margin-bottom: 0;
   margin-right: 30px;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .comment_item .comment_date {
   color: #a8aaab;
@@ -2875,38 +2866,38 @@ hr {
   color: #6b6b6b;
   font-size: 18px;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .fooetr_newsletter_1 .form_item input {
   height: 66px;
   border: none;
   border-radius: 0;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .fooetr_newsletter_1 .form_item input:-moz-placeholder {
   color: #6b6b6b;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .fooetr_newsletter_1 .form_item input::-moz-placeholder {
   color: #6b6b6b;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .fooetr_newsletter_1 .form_item input:-ms-input-placeholder {
   color: #6b6b6b;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .fooetr_newsletter_1 .form_item input::-webkit-input-placeholder {
   color: #6b6b6b;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* fooetr newsletter 1 - end */
@@ -2987,28 +2978,28 @@ hr {
   font-size: 14px;
   font-weight: 400;
   font-style: italic;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .fooetr_newsletter_3 .form_item input::-moz-placeholder {
   color: #bfbfbf;
   font-size: 14px;
   font-weight: 400;
   font-style: italic;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .fooetr_newsletter_3 .form_item input:-ms-input-placeholder {
   color: #bfbfbf;
   font-size: 14px;
   font-weight: 400;
   font-style: italic;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .fooetr_newsletter_3 .form_item input::-webkit-input-placeholder {
   color: #bfbfbf;
   font-size: 14px;
   font-weight: 400;
   font-style: italic;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .fooetr_newsletter_3 .form_item .btn {
   top: 50%;
@@ -3193,7 +3184,7 @@ hr {
   font-size: 16px;
   margin-bottom: 0;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .footer_instagram2 .title_text i {
   margin-right: 5px;
@@ -3204,7 +3195,7 @@ hr {
   margin-bottom: 0;
   font-weight: 500;
   color: #546076;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .footer_instagram2 .viewall_btn:hover {
   color: #344493;
@@ -3257,7 +3248,7 @@ hr {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .footer_twitter .twitter_user_name {
   color: #7c7c7c;
@@ -3307,13 +3298,13 @@ hr {
 /* footer style 2 - start */
 .footer_style_2 {
   background-color: #1c1f23;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .footer_style_2 .footer_widget_title {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .footer_style_2 .fooetr_widget_area {
   padding: 100px 0 80px;
@@ -3388,7 +3379,7 @@ hr {
   padding: 60px 0 80px;
 }
 .footer_style_3 .footer_about p {
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .footer_style_3 .social_primary a {
   color: #888888;
@@ -3521,7 +3512,7 @@ hr {
 .footer_style_5 .footer_about p {
   font-size: 16px;
   margin-bottom: 40px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .footer_style_5 .footer_contact_info {
   margin-bottom: 45px;
@@ -3595,7 +3586,7 @@ hr {
 /* footer style 6 - start */
 .footer_style_6 {
   color: #bbb8b8;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .footer_style_6 .footer_widget_area {
   padding: 90px 0 70px;
@@ -3791,7 +3782,7 @@ hr {
 .footer_style_8 .footer_bottom .copyright_text {
   color: #888889;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .footer_style_8 .footer_bottom .copyright_text a {
   color: #888889;
@@ -3923,25 +3914,25 @@ hr {
   color: #666666;
   font-size: 13px;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .sb_search .form_item input::-moz-placeholder {
   color: #666666;
   font-size: 13px;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .sb_search .form_item input:-ms-input-placeholder {
   color: #666666;
   font-size: 13px;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .sb_search .form_item input::-webkit-input-placeholder {
   color: #666666;
   font-size: 13px;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .sb_search .form_item button {
   top: 50%;
@@ -4310,7 +4301,7 @@ hr {
   color: #949494;
   font-size: 21px;
   margin-bottom: 40px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .newsletter_form_1 p small {
   font-size: 18px;
@@ -4535,7 +4526,7 @@ hr {
 }
 .main_slider_1 p {
   margin-bottom: 40px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* main slider 1 - end */
@@ -4590,7 +4581,7 @@ hr {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 35px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .main_slider_4 .item_type {
   right: 66px;
@@ -4680,7 +4671,7 @@ hr {
 .main_slider_5 p {
   font-size: 20px;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .main_slider_5 .slider_nav {
   left: 0;
@@ -4740,7 +4731,7 @@ hr {
 .main_slider_6 p {
   font-size: 20px;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .main_slider_6 .model_image1 {
   left: 0;
@@ -4864,7 +4855,7 @@ hr {
   font-weight: 900;
   position: absolute;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .main_slider_8 .slider_content {
   margin-top: -230px;
@@ -4957,7 +4948,7 @@ hr {
   font-size: 52px;
   margin-bottom: 0;
   font-weight: 400;
-  font-family: "Aligatai";
+  font-family: "MuliRegular";
 }
 .main_slider_10 .big_title {
   font-size: 86px;
@@ -5383,7 +5374,7 @@ hr {
   font-weight: 400;
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 .creative_category_section p {
   font-size: 23px;
@@ -5435,7 +5426,7 @@ hr {
 .fullwidth_deals_1 p {
   font-size: 17px;
   margin-bottom: 40px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
   color:#546076;
 }
 
@@ -5566,7 +5557,7 @@ hr {
   color: #1e1e1e;
   font-size: 19px;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .fullwidth_deals_2 .slick-dots {
   bottom: 40px;
@@ -5600,7 +5591,7 @@ hr {
   font-size: 140px;
   font-weight: 400;
   margin-bottom: 45px;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 .fullwidth_deals_3 .countdown_timer {
   margin-bottom: 70px;
@@ -5617,7 +5608,7 @@ hr {
   font-size: 44px;
   font-weight: 400;
   margin-bottom: 5px;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 .fullwidth_deals_3 .countdown_timer span {
   font-size: 17px;
@@ -5667,7 +5658,7 @@ hr {
   text-transform: uppercase;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
   background-color: rgba(255, 255, 255, 0.8);
 }
 .instagram_title_2 i {
@@ -5999,7 +5990,7 @@ hr {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #928656;
 }
@@ -6217,7 +6208,7 @@ hr {
   font-weight: 500;
   margin-bottom: 5px;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .feature_item_1 .item_category:hover {
   color: #344493;
@@ -6344,7 +6335,7 @@ hr {
   color: #686868;
   font-size: 20px;
   margin-bottom: 40px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .feature_item_3:hover .item_image img {
   -webkit-transform: scale(1.08);
@@ -6396,7 +6387,7 @@ hr {
   color: #777777;
   font-size: 19px;
   margin-bottom: 35px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* feature item 4 (home 3) - end */
@@ -6416,7 +6407,7 @@ hr {
   color: #231f1f;
   font-size: 18px;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .fullwidth_feature_1 .info_list {
   margin-bottom: 65px;
@@ -6465,7 +6456,7 @@ hr {
   color: #898989;
   display: block;
   font-size: 17px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* full width feature 1 (home 4) - end */
@@ -6486,7 +6477,7 @@ hr {
 .fullwidth_feature_2 p {
   font-size: 18px;
   margin-bottom: 35px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .fullwidth_feature_2 .nav {
   max-width: 144px;
@@ -6570,7 +6561,7 @@ hr {
   color: #231f1f;
   font-size: 20px;
   margin-bottom: 35px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* full width feature 3 (home 6) - end */
@@ -6927,7 +6918,7 @@ hr {
   font-size: 52px;
   font-weight: 400;
   margin-bottom: 15px;
-  font-family: "Aligatai";
+  font-family: "MuliRegular";
 }
 .fullwidth_feature_6 h4 {
   line-height: 1;
@@ -6989,7 +6980,7 @@ hr {
   font-size: 53px;
   font-weight: 400;
   margin-bottom: 10px;
-  font-family: "Aligatai";
+  font-family: "MuliRegular";
 }
 .fullwidth_feature_7 .item_title {
   font-size: 70px;
@@ -6999,7 +6990,7 @@ hr {
   color: #494949;
   font-size: 18px;
   margin-bottom: 45px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .fullwidth_feature_7 .image_group {
   margin: -5px;
@@ -7170,14 +7161,14 @@ hr {
   font-weight: 700;
   margin-bottom: 6px;
   color: #344493;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .featured_collection .title_wrap .big_title {
   line-height: 1;
   font-size: 100px;
   font-weight: 400;
   margin-bottom: 50px;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 
 .featured_collection_carousel .carousel_nav {
@@ -7254,7 +7245,7 @@ hr {
   font-weight: 400;
   font-size: 110px;
   margin-bottom: 10px;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 .our_collection1 .image_group {
   margin: 0 -10px 10px;
@@ -7273,7 +7264,7 @@ hr {
   font-weight: 400;
   font-size: 140px;
   margin-bottom: 10px;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 .our_collection2 p {
   font-size: 22px;
@@ -7288,7 +7279,7 @@ hr {
   font-weight: 400;
   font-size: 235px;
   margin-bottom: 0;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 .our_collection3 p {
   font-size: 23px;
@@ -7318,7 +7309,7 @@ hr {
 .our_collection3 .product_item h3 a {
   color: #ffffff;
   font-size: 40px;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 .our_collection3 .product_item h3 a:hover {
   color: #344493;
@@ -7338,7 +7329,7 @@ hr {
   font-weight: 400;
   font-size: 140px;
   margin-bottom: 30px;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 .our_collection4 .image_wrap {
   position: relative;
@@ -7370,7 +7361,7 @@ hr {
   font-weight: 400;
   font-size: 168px;
   margin-bottom: 10px;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 .our_collection5 p {
   font-size: 22px;
@@ -7404,7 +7395,7 @@ hr {
   font-size: 80px;
   font-weight: 400;
   margin-bottom: 15px;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 .our_collection6 .product_tabnav_4 {
   margin-bottom: 30px;
@@ -7480,7 +7471,7 @@ hr {
   color: #1f1e1e;
   font-size: 18px;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .about_section1 ul {
   margin-bottom: 45px;
@@ -7488,7 +7479,7 @@ hr {
 .about_section1 ul > li {
   color: #1f1e1e;
   font-size: 15px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .about_section1 ul > li:not(:last-child) {
   margin-bottom: 20px;
@@ -7511,7 +7502,7 @@ hr {
   font-weight: 400;
   margin-bottom: 0;
   color: #344493;
-  font-family: "Aligatai";
+  font-family: "MuliRegular";
 }
 .about_section2 .title_text {
   line-height: 1;
@@ -7555,7 +7546,7 @@ hr {
   font-size: 19px;
   margin-bottom: 0;
   line-height: 1.3;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* about section 2 - end */
@@ -7599,7 +7590,7 @@ hr {
   color: #1f1e1e;
   font-size: 20px;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* testimonial layout 1 (home 5) - end */
@@ -7610,7 +7601,7 @@ hr {
 .testimonial_item_simple p {
   font-style: italic;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .testimonial_item_simple .thumbnail_wrap {
   width: 100px;
@@ -7662,7 +7653,7 @@ hr {
   font-size: 14px;
   padding-top: 5px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .testimonial_layout_2 p {
   color: #1c1f23;
@@ -7675,7 +7666,7 @@ hr {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 0;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 .testimonial_layout_2 .name_text span {
   color: #a8aaab;
@@ -7740,7 +7731,7 @@ hr {
   margin-bottom: 0;
   margin-right: 15px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .product_filter_bar .sorting_from .select_option {
   min-width: 140px;
@@ -7937,13 +7928,13 @@ hr {
   font-size: 12px;
   font-weight: 300;
   margin-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .filter_input_group .reser_btn {
   color: #1c1f23;
   font-size: 12px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .filter_input_group .reser_btn:hover {
   color: #344493;
@@ -8092,7 +8083,7 @@ hr {
   font-weight: 500;
   margin-bottom: 35px;
   color: #546076;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .shop_offer_carousel .btns_group {
   margin: -5px;
@@ -8230,7 +8221,7 @@ hr {
   font-size: 18px;
   font-weight: 700;
   margin-right: 7px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .small_product_layout .item_price del {
   color: #a7a7a7;
@@ -8284,7 +8275,7 @@ hr {
   font-size: 13px;
   font-weight: 500;
   padding: 4px 9px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .shop_layout_1 .action_btns_group {
   top: 0;
@@ -8364,7 +8355,7 @@ hr {
   color: #546076;
   font-size: 20px;
   font-weight: 600;
-  font-family: "Plantagenet";
+  font-family: "MuliExtraBold";
 }
 .shop_layout_1 .shop_price {
   display: -webkit-box;
@@ -9361,7 +9352,7 @@ hr {
   font-weight: 700;
   border-radius: 3px;
   padding: 10px 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .shop_layout_9 .badge_sale {
   background-color: #f2b800;
@@ -9372,7 +9363,7 @@ hr {
 .shop_layout_9 .item_title {
   font-weight: 400;
   margin-bottom: 10px;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 .shop_layout_9 .item_title a {
   font-size: 20px;
@@ -9846,7 +9837,7 @@ hr {
   color: #7b7d7f;
   font-size: 18px;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .blog_standard:hover .blog_image_wrap img {
   -webkit-transform: scale(1.08);
@@ -10032,7 +10023,7 @@ hr {
   color: #686868;
   font-size: 20px;
   margin-bottom: 40px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .blog_item_split:hover .item_image img {
   -webkit-transform: scale(1.08);
@@ -10175,7 +10166,7 @@ hr {
 .blog_details_content p {
   color: #8d8e90;
   margin-bottom: 35px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .blog_details_content .post_meta {
   margin-bottom: 15px;
@@ -10274,7 +10265,7 @@ hr {
   padding: 6px 10px;
   border-radius: 2px;
   background-color: #344493;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .post_tags_links a:hover {
   background-color: #546076;
@@ -10307,7 +10298,7 @@ hr {
   padding: 5px 11px 4px;
   background-color: #1c1f23;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .shop_details .item_subtitle {
   line-height: 1;
@@ -11053,7 +11044,7 @@ hr {
 }
 .shop_details2 p {
   margin-top: 15px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .shop_details2 .title_text {
   line-height: 1;
@@ -11256,7 +11247,7 @@ hr {
 .shop_details_description p {
   color: #7b7d7f;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .shop_details_description .info_list {
   display: -webkit-box;
@@ -11426,7 +11417,7 @@ hr {
   font-size: 84px;
   margin-bottom: 0;
   font-weight: 400;
-  font-family: "Anton", sans-serif;
+  font-family: "MuliExtraBold";
 }
 
 .fashion_video_item {
@@ -11762,7 +11753,7 @@ hr {
   font-size: 15px;
   font-weight: 800;
   color: #546076;
-  font-family: "Jost", sans-serif;
+  font-family: "MuliRegular";
 }
 .cart_table tr th:first-child, .cart_table tr td:first-child {
   padding-left: 80px;
@@ -12139,7 +12130,7 @@ hr {
   color: #686c6e;
   font-size: 16px;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* accordion primary - end */
@@ -12190,7 +12181,7 @@ hr {
   color: #686c6e;
   font-size: 16px;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* accordion boxed - end */
@@ -12243,7 +12234,7 @@ hr {
   color: #686c6e;
   font-size: 16px;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* accordion boxed 2 - end */
@@ -12290,7 +12281,7 @@ hr {
   color: #686c6e;
   font-size: 16px;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* accordion border - end */
@@ -12319,7 +12310,7 @@ hr {
   font-weight: 500;
   line-height: 1.4;
   margin-bottom: 55px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 .diract_contact_info li {
@@ -12613,7 +12604,7 @@ hr {
   font-weight: 700;
   font-size: 280px;
   margin-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .error_section_3 h2 span {
   font-weight: 400;
@@ -12704,7 +12695,7 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "MuliRegular";
 }
 .dashboard_nav span {
   height: 24px;
@@ -12733,7 +12724,7 @@ hr {
 .vendor_section p {
   font-size: 18px;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 .vendor_image {
@@ -12865,7 +12856,7 @@ hr {
   border-radius: 4px;
   margin-bottom: -19px;
   background-color: #f3f3f3;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 
 /* selling form wrap - end */
@@ -13337,7 +13328,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .dashboard_admin_wrap .item_image {
   width: 200px;
@@ -13355,7 +13346,7 @@ hr {
   font-weight: 900;
   margin-bottom: 15px;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .dashboard_admin_wrap p {
   color: #3c3c3c;
@@ -13680,7 +13671,7 @@ hr {
   font-size: 14px;
   font-weight: 600;
   color: #546076;
-  font-family: "Jost", sans-serif;
+  font-family: "MuliRegular";
 }
 .compare_content_wrap .remove_btn {
   color: #cccccc;
@@ -13844,7 +13835,7 @@ hr {
 .order_tracking_section p {
   font-size: 18px;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .order_tracking_section .form_item {
   border-radius: 45px;
@@ -13981,7 +13972,7 @@ hr {
   color: #707070;
   font-size: 20px;
   margin-bottom: 15px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .thankyou_wrap .transaction_id {
   display: block;
@@ -14223,7 +14214,7 @@ hr {
 .forget_password_section p {
   font-size: 18px;
   margin-bottom: 25px;
-  font-family: "Roboto", sans-serif;
+  font-family: "MuliRegular";
 }
 .forget_password_section .forget_password_form .form_item {
   margin-bottom: 10px;
@@ -18957,8 +18948,8 @@ hr {
 
 
 .logo_m {
-  height:100px !important;
-  width: 100px;
+  height:130px !important;
+  width: 130px;
 }
 .logo_s {
   height:50px !important;
@@ -19028,12 +19019,8 @@ hr {
 	.sidenav a {font-size: 18px;}
 }
 
-.fontPlantagenet {
-  font-family: "Plantagenet";
-}
-
-.fontMuliExtraBold {
-  font-family: "MuliExtraBold";
+.fontMuliRegular {
+  font-family: "MuliRegular";
 }
 
 .logo_position_float{

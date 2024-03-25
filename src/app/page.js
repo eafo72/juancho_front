@@ -98,7 +98,7 @@ const Page = async () => {
             <div className="row align-items-center">
               <div className="col ">
                 <div className="section_title" style={{paddingBottom:"0px"}}>
-                  <h2 className="title_text text-black fontMuliExtraBold" >
+                  <h2 className="title_text text-black" >
                   Lo más nuevo de nuestra colección
                   </h2>
                 </div>
@@ -152,7 +152,7 @@ const Page = async () => {
             <div className="row align-items-center">
               <div className="col ">
                 <div className="section_title">
-                  <h2 className="title_text text-black fontMuliExtraBold" >
+                  <h2 className="title_text text-black" >
                     Nuestros productos
                   </h2>
                   <p className="mb-0">Contamos con más de 1000 opciones</p>
@@ -165,7 +165,7 @@ const Page = async () => {
                   {/*Active*/}
                   <li>
                     <button
-                      className="active fontPlantagenet"
+                      className="active fontMuliRegular"
                       data-bs-toggle="tab"
                       data-bs-target={`#${
                         categoriesSix &&
@@ -193,7 +193,7 @@ const Page = async () => {
                       .map((item) => (
                         <li key={item._id}>
                           <button
-                            className="fontPlantagenet"
+                            className="fontMuliRegular"
                             data-bs-toggle="tab"
                             data-bs-target={`#${item.nombre
                               .split(" ")
@@ -322,7 +322,7 @@ const Page = async () => {
             <div className="row align-items-center">
               <div className="col ">
                 <div className="section_title" style={{paddingBottom:"0px"}}>
-                  <h2 className="title_text text-black fontMuliExtraBold" >
+                  <h2 className="title_text text-black" >
                   Los preferidos de todos
                   </h2>
                 </div>

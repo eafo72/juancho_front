@@ -401,10 +401,7 @@ export const ProductPreviewCard = ({ item }) => {
                     <div className="col col-lg-6 col-md-8">
                       <div className="shop_details_content">
                         <h2 className="item_subtitle">{item.categoria}</h2>
-                        <h3
-                          className="item_title"
-                          style={{ fontFamily: "Plantagenet" }}
-                        >
+                        <h3 className="item_title">
                           {item.nombre}
                         </h3>
                         <h4>{item.marca}</h4>
